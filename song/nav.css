@@ -1,0 +1,79 @@
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+  background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 150vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  font-family: "Crimson Text", serif;
+}
+
+.navigation-bar {
+  display: flex;
+  font-family: "Bigshot One", serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 1000;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 25px;
+  gap: 20px;
+  left: 700px;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.images {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  top: 650px;
+}
+
+.images #vultures {
+  display: block;
+  height: 300px;
+  width: auto;
+  transition: 0.5s ease-in-out; 
+}
+
+.images #vultures:hover {
+  transform: translateY(-75px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.home-button:hover,
+.emotional-button:hover {
+  transition: 1s cubic-bezier(0, 1.67, 0.78, 0.02);
+  border-radius: 95px 95px 95px 95px;
+  background: #7e8ad1;
+}

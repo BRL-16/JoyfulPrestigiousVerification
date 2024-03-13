@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Madimi+One&display=swap');
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section1{
+  height: 150vh;
+  width: auto;
+  transition: 1s all ease-in;
+  background: url(image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.section2{
+  height: 130vh;
+  width: auto;
+  transition: 1s all ease-in;
+  background: url(day-city.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 200px;
+  font-family: "Crimson Text", serif;
+}
+.navigation-bar{
+  display: flex;
+  font-family: "Bigshot One", serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 1000;
+  position: absolute;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 25px;
+  gap: 20px;
+  left: 700px;
+}
+
+.section-1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.section-1 h1{
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+
+  animation:
+  typing 2s,
+  cursor  .4s step-end infinite alternate;
+
+
+
+
+}
+
+@keyframes curso{
+  50% {border-color: transparent;}
+}
+
+@keyframes typing{
+  from {width: 0}
+}
+.section-1 p{
+  color: white;
+  font-size: 25px;
+
+}
+.parallax{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-items: center;
+}
+ #moon{
+  position: absolute;
+  z-index: 1;
+  height: 160px;
+  width: auto;
+  top: -500px;
+}
+
+.parallax, #boat{
+  top: 500px;
+  left: 50px;
+  height: 500px;
+  width: auto;
+  z-index: 2;
+}
+
+
+
+
+
+
+.home-button:hover {
+  transition:  1s cubic-bezier(0,1.67,.78,.02);
+  border-radius: 95px 95px 95px 95px;
+  background: #7E8AD1;
+  
+}
+
+.emotional-button:hover {
+  transition:  1s  all cubic-bezier(0,1.67,.78,.02);
+  border-radius: 95px 95px 95px 95px;
+  background: #7E8AD1;
+
+}
+
+
+
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  
+  to{
+    opacity: 1;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+    transform: scale(1.1);
+  }
+}

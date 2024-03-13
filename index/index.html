@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+   <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brian Louis Salinas's Wellness</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="parallax.js"></script>
+</head>
+
+<div class="section1">
+  <div class="navigation-bar">
+    <div class="home-button"><a href="home.html">Home</a></div>
+    <div class="emotional-button"><a href="song.html">Song</a></div>
+  </div>
+  
+
+    <div class="section-1">
+      <h1 class="heading">
+        My Name is Brian Louis Salinas
+      </h1>
+     
+      <p>
+
+     I am a student at the Bassano School,  I am currently in Grade 11.
+      </p>
+
+      <p>
+        This is my Wellness Project
+      </p>
+
+      <div class="parallax">
+        <img src="boat.png" alt="" id="boat">
+        <img src="moon.png" alt="" id="moon">
+
+        
+      </div>
+    </div>
+
+</div>
+
+<div class="section2">
+
+
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var boat = document.getElementById("boat");
+    var moon = document.getElementById("moon");
+
+    var boatX = 0;
+    var moonRotation = 0;
+    var moonY = 0;
+
+    window.addEventListener("scroll", function () {
+      boatX = window.scrollY * 1.3;
+      boat.style.transform = "translateX(" + boatX + "px)";
+      
+        moonRotation = (window.scrollY % 360) * 1.2;
+        moonX = window.scrollY * 1.3;
+        moonY = window.scrollY * 0.5; 
+        moon.style.transform = "translate(" + moonX + "px, " + moonY + "px) rotateX(" + moonRotation + "deg)";
+    });
+    });
+</script>
+
+</body>
+
+</html>
+
+<!-- comments -->
+<!-- Maximum Score	Your Score -->
+<!-- Emotional Wellness	28	19
+Environmental Wellness	28	15
+Intellectual Wellness	28	23
+Occupational Wellness	28	20
+Physical Wellness	28	23
+Social Wellness	28	17
+Spiritual Wellness	28	24 -->

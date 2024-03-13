@@ -1,39 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-.navigation-bar
- {
-    display: flex;
-    font-family: "Bigshot One", serif;
+    font-family: "Noto Sans Khojki", sans-serif;
     font-weight: 400;
     font-style: normal;
-    z-index: 1000;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 25px;
-    gap: 20px;
-    left: 0px;
-    width: 100%;
-    height: 50px;
-    top: 0px;
-    border: solid;
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-repeat: no-repeat;
+}
 
-    
-    
-  }
-  
-.home-button:hover,
-.emotional-button:hover {
-  transition: 1s cubic-bezier(0, 1.67, 0.78, 0.02);
-  border-radius: 95px 95px 95px 95px;
-  background: #7e8ad1;
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.info {
+    display: flex;
+    position: relative;
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .section-1 {
@@ -50,9 +41,101 @@ body {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background-size: cover;
+}
 
-  }
-  
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 0;
+    left: 0;
+    overflow-y: hidden; 
+}
+
+.image {
+    background: url('Stronger.jpg') center/cover no-repeat;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    background: rgba(39, 29, 57, 0.893);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    z-index: 1;
+}
+
+.info-1 {
+    opacity: 1;
+    color: white;
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.info-1 h1 {
+    font-size: 50px;
+}
+
+.info-1 p {
+    font-size: 25px;
+}
+
+.navigation-bar {
+    display: flex;
+    font-family: "Bigshot One", serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 1000;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+    gap: 20px;
+    left: 5px;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    border: solid;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.home-button:hover,
+.emotional-button:hover {
+    transition: 1s cubic-bezier(0, 1.67, 0.78, 0.02);
+    border-radius: 95px 95px 95px 95px;
+    background: #7e8ad1;
+}
+
 .record-container {
     position: relative;
 }
@@ -72,7 +155,7 @@ body {
     left: 20px;
     width: 160px;
     height: 160px;
-    background: url('vultures1.jpeg') center/cover;
+    background: url('Stronger.jpg') center/cover;
     background-size: cover;
     border-radius: 50%;
     animation: rotateAlbum 1s linear infinite;
@@ -126,10 +209,9 @@ body {
         transform: rotate(-360deg);
     }
 }
+
 @media only screen and (max-width: 768px) {
     body {
         font-size: 14px;
     }
-
-
 }

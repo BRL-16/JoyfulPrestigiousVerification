@@ -62,18 +62,31 @@ a {
 
 .images #stronger {
   display: block;
-  height: 300px;
+  height: 200px;
+  width: auto;
+  transition: 0.5s ease-in-out;
+  top: -100px; 
+}
+
+.images #MJ {
+  display: block;
+  position: absolute;
+  height: 200px;
+  left: 670px;
+  top: 50px;
   width: auto;
   transition: 0.5s ease-in-out; 
 }
-
 .images #stronger:hover {
   transform: translateY(-75px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
-
+.images #MJ:hover {
+  transform: translateY(-75px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 .home-button:hover,
 .emotional-button:hover {

@@ -62,6 +62,7 @@ a {
 
 .images #stronger {
   display: block;
+  background-image: url(Stronger.jpg);
   position: absolute;
   height: 200px;
   left: 670px;
@@ -74,6 +75,7 @@ a {
 .images #MJ {
   display: block;
   position: absolute;
+  background-image: url(MJ.jpeg);
   height: 200px;
   left: 670px;
   top: -100px;
@@ -82,6 +84,7 @@ a {
 }
 .images #journey {
   display: block;
+  background-image: url(journey.jpeg);
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -94,6 +97,7 @@ a {
 .images #stronger:hover {
   transform: translateY(-75px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: url(animated_gif/animatedbear.gif);
 }
 
 .images #journey:hover {

@@ -30,6 +30,7 @@ a {
 .section-1 {
     display: flex;
     flex-direction: column;
+    color: white;
     height: 150vh;
     width: auto;
     position: relative;
@@ -61,7 +62,7 @@ a {
 }
 
 .image {
-    background: url('MJ.jpeg') center/cover no-repeat;
+    background: url('journey.jpeg') center/cover no-repeat;
     position: relative;
     height: 100%;
     width: 100%;
@@ -155,7 +156,7 @@ a {
     left: 20px;
     width: 160px;
     height: 160px;
-    background: url('MJ.jpeg') center/cover;
+    background: url('journey.jpeg') center/cover;
     background-size: cover;
     border-radius: 50%;
     animation: rotateAlbum 1s linear infinite;

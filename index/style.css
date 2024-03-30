@@ -53,7 +53,7 @@ a{
   left: 700px;
 }
 
-.section-1{
+.section-1, .section2{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -65,7 +65,7 @@ a{
 }
 
 
-.section-1 h1{
+.section-1 h1, .section2 h1{
   color: white;
   font-size: 50px;
   font-weight: 300;
@@ -79,6 +79,13 @@ a{
 
 
 
+}
+
+.section2 p{
+  color: white;
+  font-size: 25px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
 }
 
 @keyframes curso{

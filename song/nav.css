@@ -97,7 +97,7 @@ a {
   transition: 0.5s ease-in-out; 
   z-index: 2;
 }
-.images #int {
+.images #inter {
   display: block;
   background-image: url(journey.jpeg);
   position: absolute;
@@ -105,7 +105,19 @@ a {
   justify-content: center;
   height: 200px;
   left: 670px;
-  top: -150px;
+  top: -190px;
+  width: auto;
+  transition: 0.5s ease-in-out; 
+}
+.images #foot{
+  display: block;
+  background-image: url(.jpeg);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  left: 670px;
+  top: -175px;
   width: auto;
   transition: 0.5s ease-in-out; 
 }
@@ -115,7 +127,11 @@ a {
   background: url(animated_gif/animatedbear.gif);
 }
 
-.images #int:hover {
+.images #inter:hover {
+  transform: translateY(-50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.images #foot:hover {
   transform: translateY(-50px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
